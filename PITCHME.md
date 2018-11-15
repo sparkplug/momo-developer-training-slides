@@ -1,4 +1,4 @@
-# MoMo API Developer Training 
+## MoMo API Developer Training 
 
 Hello and welcome to the MoMo Developer Training
 
@@ -14,4 +14,3 @@ Hello and welcome to the MoMo Developer Training
 
 ---
 
-![Sparkplug](/images/sparkpluglogo.png)
