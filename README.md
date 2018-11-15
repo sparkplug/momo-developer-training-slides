@@ -1,4 +1,4 @@
-# Welcome to MoMo Developer Training Slides
+# Welcome to MoMo API Developer Training Slides
 
 Hello and welcome to the MoMo Developer Training. Some of the themes we shall explore today:
 
