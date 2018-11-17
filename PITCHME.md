@@ -158,8 +158,6 @@ This  creates an API User
 ### Basic Auth
 
 Encode ApiKey:ApiSecret as base64 string. Pass it as a header in your requests using commandline
-=======
-### Get API Secret
 
 ```bash
 $ curl -i -X POST -H "Content-Type:application/json" -H "Ocp-Apim-Subscription-Key: your ey"   -d '{}' https://ericssonbasicapi2.azure-api.net/v1_0/apiuser/your User ID/apikey
