@@ -269,7 +269,7 @@ You should see a response similar to this:
 We can then use this `Transaction Reference` to get the status of the Transaction
 
 ```python
->>> client.getTransactionStatus('33a9d94b-6828-4879-xxxx-e0ecb946d465')
+>>> client.getTransactionStatus(ref['transaction_ref'])
 {'financialTransactionId': '1854386795', 'externalId': '123456789', 'amount': '600', 'currency': 'EUR', 'payer': {'partyIdType': 'MSISDN', 'partyId': '256794631873'}, 'payerMessage': 'dd', 'payeeNote': 'dd', 'status': 'SUCCESSFUL'}
 ```
 
@@ -277,6 +277,13 @@ Voila!
 
 ---
 
+### Check Balance
+
+```python
+>>> client.getBalance()
+```
+
+---
 
 ### Swagger URL
 
@@ -285,6 +292,16 @@ https://app.swaggerhub.com/apis-docs/sparkplug/sandbox-user_provisioning/1.0#/de
 
 ---
 
+### Important Links
+
+https://github.com/sparkplug/momoapi-python
+https://github.com/sparkplug/momoapi-node
+https://github.com/sparkplug/momoapi-example-app
+https://github.com/sparkplug/momo-developer-training-slides
+
+Send Pull Requests
+
+---
 
 
 
