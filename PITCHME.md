@@ -19,15 +19,14 @@ Wifi Key: FPWFAV
 
 ### Introduction
 
+https://momodeveloper.mtn.com
+
+---
+### Introduction
+
 First, what is an API?
 
 "a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service." - Wikipedia
-
----
-
-### Introduction
-
-https://momodeveloper.mtn.com
 
 ---
 
@@ -179,7 +178,10 @@ Basic Auth using Python
 
 ---
 
+### Swagger 
 
+https://app.swaggerhub.com/apis-docs/sparkplug/sandbox-user_provisioning/1.0#/default/post-v1_0-apiuser
 
+```
 
-
+---
