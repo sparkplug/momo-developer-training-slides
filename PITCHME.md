@@ -105,8 +105,41 @@ Next, we install from source:
 $ python setup.py install
 ```
 
---- 
+---
 
+### Using the Python Wrapper
+
+```bash
+$ momoapi
+$ providerCallBackHost: https://akabbo.ug
+$ Ocp-Apim-Subscription-Key: f83xx8d8xx6749f19a26e2265aeadbcdeg
+```
+
+where `providerCallBackHost` is your callback host and `Ocp-Apim-Subscription-Key` is your API key for the specific product to which you are subscribed.
+
+---  
+
+### Using the Python Wrapper
+
+You should get the following response.
+
+```bash
+Here is your User Id and API secret : {'apiKey': 'b0431db58a9b41faa8f5860230xxxxxx', 'UserId': '053c6dea-dd68-xxxx-xxxx-c830dac9f401'}
+
+```
+
+---
+### Using the Python Wrapper
+
+```python
+from momoapi.client import MomoApi
+client = MomoApi(APIKEY,USERID,APISECRET)
+ref=client.requestToPay("256772123456", "600", "123456789", note="dd", message="dd", currency="EUR", environment="sandbox")
+```
+
+Replace `APIKEY`, `USERID`, `APISECRET` with the correct string literals.
+ 
+---
 
 
 
