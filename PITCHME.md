@@ -1,6 +1,7 @@
 ## MoMo API Developer Training 
 
-Hello and welcome.
+Wifi Network: Tribe Kampala
+Wifi Key: FPWFAV
 
 
 ---
@@ -129,16 +130,52 @@ Here is your User Id and API secret : {'apiKey': 'b0431db58a9b41faa8f5860230xxxx
 ```
 
 ---
-### Using the Python Wrapper
 
-```python
-from momoapi.client import MomoApi
-client = MomoApi(APIKEY,USERID,APISECRET)
-ref=client.requestToPay("256772123456", "600", "123456789", note="dd", message="dd", currency="EUR", environment="sandbox")
+### Using Curl
+
+First we generate a UUID on bash
+
+```bash
+$ uuidgen
+
 ```
 
-Replace `APIKEY`, `USERID`, `APISECRET` with the correct string literals.
- 
+---
+
+### Using Curl
+
+First we generate a UUID with python
+
+```bash
+$ curl -v -X POST  -H "X-Reference-Id: your uuid4"  -H  "Ocp-Apim-Subscription-Key: APIKey”
+ -H "Content-Type: application/json"  -d '{"providerCallbackHost": "sparkpl.ug"}'   https://ericssonbasicapi2.azure-api.net/v1_0/apiuser
+
+```
+
+This returns your `API Secret`
+---
+
+### Using Curl
+
+Basic Auth using Commandline
+
+```bash
+$ openssl enc -base64 <<< 'UUID'
+
+```
+
+---
+
+### Using Curl
+
+Basic Auth using Python
+
+```python
+>> import base64
+>>  base64.b64encode('41187126-ab69-46ed-b7a5-7f3316c7942e:9ad0de137e194567bf310590b9471a63'.encode()) 
+
+```
+
 ---
 
 
