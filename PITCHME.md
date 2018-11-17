@@ -147,13 +147,23 @@ $ uuidgen
 First we generate a UUID with python
 
 ```bash
-$ curl -v -X POST  -H "X-Reference-Id: your uuid4"  -H  "Ocp-Apim-Subscription-Key: APIKey”
+$ curl -v -X POST  -H "X-Reference-Id: your uuid4"  -H  "Ocp-Apim-Subscription-Key: APIKey"
  -H "Content-Type: application/json"  -d '{"providerCallbackHost": "sparkpl.ug"}'   https://ericssonbasicapi2.azure-api.net/v1_0/apiuser
 
 ```
 
-This returns your `API Secret`
+This  creates an API User
 ---
+
+### Get API Secret
+
+```bash
+$ curl -i -X POST -H "Content-Type:application/json" -H "Ocp-Apim-Subscription-Key: your ey"   -d '{}' https://ericssonbasicapi2.azure-api.net/v1_0/apiuser/your User ID/apikey
+
+
+```
+
+
 
 ### Using Curl
 
