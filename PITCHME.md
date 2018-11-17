@@ -303,6 +303,9 @@ Send Pull Requests
 
 ---
 
+## MoMo API Developer Training 
+
+Thank you for coming
 
 
 
