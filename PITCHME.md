@@ -178,10 +178,10 @@ Basic Auth using Python
 
 ---
 
-### Swagger 
+### Swagger URL
+
 
 https://app.swaggerhub.com/apis-docs/sparkplug/sandbox-user_provisioning/1.0#/default/post-v1_0-apiuser
 
-```
 
 ---
