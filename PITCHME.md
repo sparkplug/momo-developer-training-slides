@@ -147,7 +147,7 @@ $ uuidgen
 First we generate a UUID with python
 
 ```bash
-$ curl -v -X POST  -H "X-Reference-Id: your uuid4"  -H  "Ocp-Apim-Subscription-Key: APIKey"
+$ curl -v -X POST  -H "X-Reference-Id: UUID"  -H  "Ocp-Apim-Subscription-Key: APIKey"
  -H "Content-Type: application/json"  -d '{"providerCallbackHost": "sparkpl.ug"}'   https://ericssonbasicapi2.azure-api.net/v1_0/apiuser
 
 ```
@@ -160,7 +160,7 @@ This  creates an API User
 Encode ApiKey:ApiSecret as base64 string. Pass it as a header in your requests using commandline
 
 ```bash
-$ curl -i -X POST -H "Content-Type:application/json" -H "Ocp-Apim-Subscription-Key: your ey"   -d '{}' https://ericssonbasicapi2.azure-api.net/v1_0/apiuser/your User ID/apikey
+$ curl -i -X POST -H "Content-Type:application/json" -H "Ocp-Apim-Subscription-Key: ApiKey"   -d '{}' https://ericssonbasicapi2.azure-api.net/v1_0/apiuser/UserId/ApiKey
 ```
 
 
