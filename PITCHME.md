@@ -305,6 +305,8 @@ Send Pull Requests
 
 ## MoMo API Developer Training 
 
+Feedback form: http://bit.do/apitraining
+
 Thank you for coming
 
 
