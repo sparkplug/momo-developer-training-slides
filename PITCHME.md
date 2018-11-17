@@ -184,12 +184,108 @@ Basic Auth using Python
 
 ---
 
+### Basic Auth 
+
+Lets use basic auth to get an `Auth Token` with curl
+
+```bash 
+$ curl -i -X POST -H "Content-Type:application/json"  -H "Authorization: Basic NDExODcxMjYtYWI2OS00NmVkLWI3YTUtN2YzMzE2Yzc5NDJlOjlhZDBkZTEzN2UxOTQ1NjdiZjMxMDU5MGI5NDcxYTYz"  -d {} https://ericssonbasicapi2.azure-api.net/colection/token/ 
+```
+
+This returns the token. Lets use this token to do bearer token authentication. This is what we shall use for the rest of the API calls.
+
+---
+
+### Exploring the API
+
+There are two main APIs for payments:
+
+- requestToPay
+- transfer
+
+---
+
+
+### Collections API Product
+
+- This operation is used to request a payment from a consumer (Payer). The payer will be asked to authorize the payment. 
+- The transaction will be executed once the payer has authorized the payment. 
+- The requesttopay will be in status PENDING until the transaction is authorized or declined by the payer or it is timed out by the system.
+
+---
+
+### Request To Pay
+
+POST /v1_0/requesttopay
+
+https://app.swaggerhub.com/apis-docs/sparkplug/collection/1.0#/default/requesttopay-POST
+
+---
+
+### Request to Pay Using the Python Library
+
+```python
+from momoapi.client import MomoApi
+client = MomoApi(APIKEY,USERID,APISECRET)
+ref=client.requestToPay("256772123456", "600", "123456789", note="dd", message="dd", currency="EUR", environment="sandbox")
+```
+
+---
+
+### Request to Pay Using the Python Library
+
+So, what just happened? We create a client on the commandline, and made a requestToPay transaction. 
+
+```python
+>>> ref
+```
+
+You should see a response similar to this:
+
+```python
+>>> ref
+{'transaction_ref': '33a9d94b-6828-4879-xxxx-e0ecb946d465'}
+```
+---
+
+### Request to Pay Using the Python Library
+
+So, what just happened? We create a client on the commandline, and made a requestToPay transaction. 
+
+```python
+>>> ref
+```
+
+You should see a response similar to this:
+
+```python
+>>> ref
+{'transaction_ref': '33a9d94b-6828-4879-xxxx-e0ecb946d465'}
+```
+---
+
+### Request to Pay Using the Python Library
+
+We can then use this `Transaction Reference` to get the status of the Transaction
+
+```python
+>>> client.getTransactionStatus('33a9d94b-6828-4879-xxxx-e0ecb946d465')
+{'financialTransactionId': '1854386795', 'externalId': '123456789', 'amount': '600', 'currency': 'EUR', 'payer': {'partyIdType': 'MSISDN', 'partyId': '256794631873'}, 'payerMessage': 'dd', 'payeeNote': 'dd', 'status': 'SUCCESSFUL'}
+```
+
+Voila!
+
+---
+
+
 ### Swagger URL
 
 
 https://app.swaggerhub.com/apis-docs/sparkplug/sandbox-user_provisioning/1.0#/default/post-v1_0-apiuser
 
 ---
+
+
 
 
 
