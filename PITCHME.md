@@ -155,14 +155,16 @@ $ curl -v -X POST  -H "X-Reference-Id: your uuid4"  -H  "Ocp-Apim-Subscription-K
 This returns your `API Secret`
 ---
 
-### Using Curl
+### Basic Auth
 
-Basic Auth using Commandline
+Encode ApiKey:ApiSecret as base64 string. Pass it as a header in your requests using commandline
+
 
 ```bash
 $ openssl enc -base64 <<< 'UUID'
 
 ```
+Where `41187126-ab69-46ed-b7a5-7f3316c7942e` is the ApiKey `9ad0de137e194567bf310590b9471a63` is the secret
 
 ---
 
@@ -183,5 +185,7 @@ Basic Auth using Python
 
 https://app.swaggerhub.com/apis-docs/sparkplug/sandbox-user_provisioning/1.0#/default/post-v1_0-apiuser
 
-
 ---
+
+
+
