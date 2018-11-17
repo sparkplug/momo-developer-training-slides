@@ -1,8 +1,7 @@
 ## MoMo API Developer Training 
 
-Hello and welcome to the MoMo Developer Training
+Hello and welcome.
 
-[Sparkplug](http://sparkpl.ug)
 
 ---
 
@@ -30,9 +29,7 @@ https://momodeveloper.mtn.com
 
 ---
 
-### Introduction
-
-What we shall do:
+### To Start
 
 - Sign Up
 - Subscribe to a Product
@@ -57,6 +54,10 @@ After creating an account, head on over to the products page. The list of produc
 - Remittance 
 - Collection Widget
 
+---
+
+### Subscribe to Collections
+
 Click on `Collections` and hit the `Subscribe` button. This generates your `API Key`. The API is unique to the product and you will need an `API Key` for each product you use.
 
 ---
@@ -72,11 +73,39 @@ Currently, there are two ways to create these:
 
 ### Using the Python Wrapper
 
-Head on over to https://github.com/sparkplug/momoapi-python
+https://github.com/sparkplug/momoapi-python
 
-Follow the README 
+Follow the README
 
 ---
+
+### Using the Python Wrapper
+
+git clone https://github.com/sparkplug/momoapi-python
+
+--- 
+
+### Using the Python Wrapper
+
+Creation of virtualenv:
+
+```bash
+$ virtualenv -p python3 <desired-path>
+```
+
+Activate the virtualenv:
+
+```bash
+$ source <desired-path>/bin/activate
+```
+
+Next, we install from source:
+
+```bash
+$ python setup.py install
+```
+
+--- 
 
 
 
