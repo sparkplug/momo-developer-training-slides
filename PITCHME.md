@@ -307,7 +307,10 @@ Send Pull Requests
 
 Feedback form: http://bit.do/apitraining
 
-Thank you for coming
+Community Chat: https://spectrum.chat/momo-api-developers/
+
+Thank you. 
+
 
 
 
