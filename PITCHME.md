@@ -67,8 +67,8 @@ Click on `Collections` and hit the `Subscribe` button. This generates your `API 
 
 Currently, there are two ways to create these:
 
-- Using the Sparkplug MoMo Python library
 - Using Curl
+- Using the [Sparkplug MoMo Python](https://github.com/sparkplug/momoapi-python) library
 
 ---
 
