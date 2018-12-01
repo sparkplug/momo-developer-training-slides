@@ -2,7 +2,7 @@
 
 Wifi Network: Tribe Kampala
 
-Wifi Key: 7XR6F3
+Wifi Key: 	2E2PJV
 
 
 ---
