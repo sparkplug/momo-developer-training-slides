@@ -2,7 +2,7 @@
 
 Wifi Network: Tribe Kampala
 
-Wifi Key: 	2E2PJV
+Wifi Key: 	LXWX1H
 
 
 ---
@@ -109,7 +109,7 @@ $ curl -i -X POST -H "Content-Type:application/json" -H "Ocp-Apim-Subscription-K
 $ openssl enc -base64 <<< 'UUID'
 
 ```
-Where `41187126-ab69-46ed-b7a5-7f3316c7942e` is the ApiKey `9ad0de137e194567bf310590b9471a63` is the secret
+Where `41187126-ab69-46ed-b7a5-7f3316c7942e` is the ApiKey `9ad0de137e194567bf310590b9471a63` is the API Secret
 
 ---
 
